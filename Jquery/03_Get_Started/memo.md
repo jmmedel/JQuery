@@ -1,0 +1,38 @@
+jQuery Get Started
+Adding jQuery to Your Web Pages
+There are several ways to start using jQuery on your web site. You can:
+
+Download the jQuery library from jQuery.com
+Include jQuery from a CDN, like Google
+Downloading jQuery
+There are two versions of jQuery available for downloading:
+
+Production version - this is for your live website because it has been minified and compressed
+Development version - this is for testing and development (uncompressed and readable code)
+Both versions can be downloaded from jQuery.com.
+
+The jQuery library is a single JavaScript file, and you reference it with the HTML <script> tag (notice that the <script> tag should be inside the <head> section):
+
+<head>
+<script src="jquery-3.4.0.min.js"></script>
+</head>
+Tip: Place the downloaded file in the same directory as the pages where you wish to use it.
+Do you wonder why we do not have type="text/javascript" inside the <script> tag?
+
+This is not required in HTML5. JavaScript is the default scripting language in HTML5 and in all modern browsers!
+
+jQuery CDN
+If you don't want to download and host jQuery yourself, you can include it from a CDN (Content Delivery Network).
+
+Both Google and Microsoft host jQuery.
+
+To use jQuery from Google or Microsoft, use one of the following:
+
+Google CDN:
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+Microsoft CDN:
+<head>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+</head>
