@@ -1,0 +1,77 @@
+
+<!-- 
+
+    jQuery Effects - Sliding
+The jQuery slide methods slide elements up and down.
+
+
+Examples
+jQuery slideDown()
+Demonstrates the jQuery slideDown() method.
+
+jQuery slideUp()
+Demonstrates the jQuery slideUp() method.
+
+jQuery slideToggle()
+Demonstrates the jQuery slideToggle() method.
+
+jQuery Sliding Methods
+With jQuery you can create a sliding effect on elements.
+
+jQuery has the following slide methods:
+
+slideDown()
+slideUp()
+slideToggle()
+jQuery slideDown() Method
+The jQuery slideDown() method is used to slide down an element.
+
+Syntax:
+
+$(selector).slideDown(speed,callback);
+The optional speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast", or milliseconds.
+
+The optional callback parameter is a function to be executed after the sliding completes.
+
+The following example demonstrates the slideDown() method:
+
+-->
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">Click to slide down panel</div>
+<div id="panel">Hello world!</div>
+
+</body>
+</html>
+
+
+
