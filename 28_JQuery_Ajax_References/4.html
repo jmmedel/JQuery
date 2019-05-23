@@ -1,0 +1,41 @@
+
+<!-- 
+
+Parameter	Description
+url	Required. Specifies the url to send the request to
+data	Optional. Specifies data to be sent to the server
+success(data,status,xhr)	Optional. Specifies the function to run if the request succeeds
+Additional parameters:
+data - contains the data returned from the server.
+status - contains a string containing request status ("success", "notmodified", "error", "timeout", or "parsererror").
+xhr - contains the XMLHttpRequest object
+
+
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.getJSON("demo_ajax_json.js", function(result){
+      $.each(result, function(i, field){
+        $("div").append(field + " ");
+      });
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Get JSON data</button>
+
+<div></div>
+
+</body>
+</html>
